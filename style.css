@@ -1,6 +1,7 @@
 body {
 	font-family: 'Trebuchet MS', Arial, sans-serif;
-	background color: white;
+    margin-left: 2em;
+    margin-top : 2em;
 }
 
 @font-face {
@@ -29,4 +30,34 @@ header h2 {
 
 footer {
     background-color: rgb(240, 240,240);
+}
+
+#hebergements {
+	width: 500px;
+	height: 390px;
+	margin: 30px 30px 30px 30px;
+	padding: 5px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background-color: rgb(240, 240, 240);
+	text-align: left;
+}
+
+#populaires {
+	width: 500px;
+	height: 390px;
+	margin: 30px 30px 30px 30px;
+	padding: 5px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background-color: rgb(240, 240, 240);
+	text-align: left;
+}
+
+#activites {
+	width: 500px;
+	height: 390px;
+	margin: 30px 30px 30px 30px;
+	padding: 5px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background-color: rgb(240, 240, 240);
+	text-align: left;
 }
