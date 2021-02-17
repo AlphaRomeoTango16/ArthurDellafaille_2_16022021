@@ -1,39 +1,169 @@
-body {
-	font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin-left: 2em;
-    margin-top : 2em;
-}
-
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('polices/Raleway_CSS/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('polices/Raleway_CSS/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'Raleway-Thin';
+    src: url('polices/Raleway-thin/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('polices/Raleway-thin/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src:url('polices/Raleway-SemiBold/Raleway-SemiBold.woff') format('woff'),
+        url('polices/Raleway-SemiBold/Raleway-SemiBold.woff2') format('woff2'),
+        url('polices/Raleway-SemiBold/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg'),
+        url('polices/Raleway-SemiBold/Raleway-SemiBold.eot'),
+        url('polices/Raleway-SemiBold/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('polices/Raleway-SemiBold/Raleway-SemiBold.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src:url('polices/Raleway-Regular/Raleway-Regular.woff') format('woff'),
+        url('polices/Raleway-Regular/Raleway-Regular.woff2') format('woff2'),
+        url('polices/Raleway-Regular/Raleway-Regular.svg#Raleway-Regular') format('svg'),
+        url('polices/Raleway-Regular/Raleway-Regular.eot'),
+        url('polices/Raleway-Regular/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('polices/Raleway-Regular/Raleway-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
+}
+
+
+header {
+    margin-left: 2em;
+    margin-top : 2em;
+    display: flex;
+}
 
 img {
     width: 100px;
 	height: 50px;
 }
 
-header h1 {
-	font-family: ralewaythin, serif;
-	font-weight: bold;
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav li {
+    padding-right: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:grey;
+}
+
+header nav a:hover {
+    color: #0065FC;
+    font-family: 'Raleway-SemiBold';
+}
+
+header mark {
+	font-family: 'Raleway-SemiBold', serif;
+	font-weight: normal;
+    background-color: white;
+    font-size: 0.7em;
 }
 
 header h2 {
-    font-family: ralewaythin, serif;
+    font-family: 'Raleway-Thin', serif;
 	font-weight: normal;
 }
 
-footer {
-    background-color: rgb(240, 240,240);
+#fond_map_marker {
+    background-color: #F2F2F2;
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
 }
+
+#map_marker {
+    width: 15px;
+    height: 15px;
+    margin: 20px 15px 20px 15px;
+}
+
+#rechercher {
+	width: 200px;
+	height: 40px;
+    border-width: 0.2em;
+    border-left: none;
+    border-right: none;
+    border-color: #F2F2F2;
+}
+
+#barre, button {
+    width: 100px;
+	height: 40px;
+	border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    color: white;
+    border-style: none;
+    font-weight: bold;
+}
+
+#filtres {
+    display: flex;
+}
+
+#filtres h1 {
+    font-size: 1em;
+    font-family: 'Raleway-SemiBold', serif;
+}
+
 
 #hebergements {
-	width: 500px;
+	width: 600px;
+	height: 390px;
+	margin: 30px 30px 30px 30px;
+	padding: 5px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background-color: #F2F2F2;
+	text-align: left;
+}
+
+#hebergements h2 {
+    font-size: 0.9em;
+}
+
+#hebergements h3 {
+    font-size: 0.7em;
+}
+
+
+#flex_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#hotel_1, #hotel_2, #hotel_3, #hotel_4, #hotel_5, #hotel_6 {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+
+#populaires {
+	width: 300px;
 	height: 390px;
 	margin: 30px 30px 30px 30px;
 	padding: 5px 20px 20px 20px;
@@ -42,14 +172,19 @@ footer {
 	text-align: left;
 }
 
-#populaires {
-	width: 500px;
-	height: 390px;
-	margin: 30px 30px 30px 30px;
-	padding: 5px 20px 20px 20px;
-	border-radius: 20px 20px 20px 20px;
-	background-color: rgb(240, 240, 240);
-	text-align: left;
+#flex_2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#populaire_1, #populaire_2, #populaire_3, #populaire_4, #populaire_5, #populaire_6 {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
 }
 
 #activites {
@@ -58,6 +193,14 @@ footer {
 	margin: 30px 30px 30px 30px;
 	padding: 5px 20px 20px 20px;
 	border-radius: 20px 20px 20px 20px;
-	background-color: rgb(240, 240, 240);
+	background-color: #F2F2F2;
 	text-align: left;
+}
+
+footer {
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    display: flex;
+    margin-left: 2em;
+    margin-top : 2em;
 }
