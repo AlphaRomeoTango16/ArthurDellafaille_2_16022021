@@ -48,6 +48,7 @@ header {
 img {
     width: 100px;
 	height: 50px;
+    margin-bottom: 10px;
 }
 
 header nav ul {
@@ -79,19 +80,25 @@ header h2 {
     font-family: 'Raleway-Thin', serif;
 	font-weight: normal;
     font-size: 1.1em;
-    margin-top: -10px;
+    margin-top: -13px;
 }
 
-#fond_map_marker {
+#search_bar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#B1 {
+    display: flex;
+}
+
+#background_map_marker {
     background-color: #F2F2F2;
-    width: 320px;
+    width: 37px;
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
     border-radius: 10px 0px 0px 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 #map_marker {
@@ -101,12 +108,13 @@ header h2 {
 }
 
 #barre {
-	width: 200px;
+	width: 190px;
 	height: 40px;
     border-width: 0.2em;
-    border-left: none;
-    border-right: none;
+    border-left-color: white;
+    border-right-color: white;
     border-color: #F2F2F2;
+    border-style: solid;
 }
 
 #rechercher {
@@ -126,16 +134,46 @@ header h2 {
 
 #filtres {
     display: flex;
+    margin-bottom: 30px;
 }
 
 #filtres h1 {
     font-size: 1em;
     font-family: 'Raleway-SemiBold', serif;
+    margin-right: 30px;
+}
+
+#filtres button {
+    margin-right: 30px;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Raleway-SemiBold', serif;
+    border-color: rgb(240, 240, 240);
+    border-width: 0.2em;
+    border-style:solid;
 }
 
 #information {
     margin-top: 15px;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+#background_button_i {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border-color: rgb(240, 240, 240);
+    border-width: 0.2em;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#button_i {
+    width: 0.3em;
 }
 
 #hebergements {
