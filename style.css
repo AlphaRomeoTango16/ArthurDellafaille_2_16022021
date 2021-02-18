@@ -34,14 +34,20 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
 body {
 	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
+    width: 100%;
 }
 
 
 header {
-    margin-left: 2em;
-    margin-top : 2em;
     display: flex;
 }
 
@@ -148,7 +154,7 @@ header h2 {
     border-radius: 50px;
     background-color: white;
     font-family: 'Raleway-SemiBold', serif;
-    border-color: rgb(240, 240, 240);
+    border-color: #F2F2F2;
     border-width: 0.2em;
     border-style:solid;
 }
@@ -164,7 +170,7 @@ header h2 {
     width: 20px;
     height: 20px;
     border-radius: 100px;
-    border-color: rgb(240, 240, 240);
+    border-color: #F2F2F2;
     border-width: 0.2em;
     border-style: solid;
     display: flex;
@@ -249,8 +255,29 @@ header h2 {
 
 footer {
     background-color: #F2F2F2;
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
-    margin-left: 2em;
-    margin-top : 2em;
+    /*A corriger*/
+    margin-left: -50px;
+    padding-left: 15px;
+}
+
+footer nav {
+    margin-right: 150px;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav h1 {
+    font-family: 'Raleway-SemiBold', serif;
+    font-size: 1em;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    line-height: 35px;
 }
