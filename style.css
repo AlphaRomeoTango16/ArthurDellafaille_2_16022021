@@ -74,7 +74,6 @@ header nav a {
 
 header nav a:hover {
     color: #0065FC;
-    font-family: 'Raleway-SemiBold';
 }
 
 header h1 {
@@ -254,6 +253,11 @@ header h2 {
     font-family: 'Raleway-SemiBold', serif;
 }
 
+#afficher_plus a:hover {
+    color: #0065FC;
+    font-family: 'Raleway-SemiBold';
+}
+
 #populaires {
 	width: 370px;
 	height: 550px;
@@ -271,7 +275,11 @@ header h2 {
 }
 
 #populaires h2 {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    font-family: 'Raleway-SemiBold', serif;
+    margin-left: 10px;
+    margin-top: 13px;
+    line-height: 5px;
 }
 
 #populaires h3 {
@@ -289,8 +297,10 @@ header h2 {
     background-color: white;
     border-radius: 10px;
     text-align: left;
-    padding: 10px;
+    padding: 3px;
     margin-left: 15px;
+    display: flex;
+    flex-direction: row;
 }
 
 #populaire_2, #populaire_3 {
@@ -298,24 +308,49 @@ header h2 {
 }
 
 .pic_hotel_2 {
-    width: 230px;
-    height: 110px;
-    border-radius: 10px 10px 0px 0px;
+    width: 135px;
+    height: 120px;
+    border-radius: 10px 0px 0px 10px;
     object-fit: cover;
     margin-bottom: -5px;
 }
 
 #activites {
-	width: 500px;
-	height: 390px;
-	margin: 30px 30px 30px 0px;
+	width: 1000;
+	height: 500;
+	margin: 0px 30px 30px -20px;
 	padding: 5px 20px 20px 20px;
 	text-align: left;
 }
 
+#activites h1 {
+    font-family: 'Raleway-SemiBold', serif;
+}
+
+#flex_3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#activite_1 {
+    width: 200px;
+    height: 190px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
+    border-radius: 10px;
+}
+
+.activite {
+    width: 300px;
+    height: 320px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
 footer {
     background-color: #F2F2F2;
-    margin-top: 70px;
+    margin-top: 10px;
     padding-top: 20px;
     display: flex;
     /*A corriger*/
@@ -341,4 +376,8 @@ footer nav a {
     color: black;
     font-size: 0.9em;
     line-height: 35px;
+}
+
+footer nav a:hover {
+    color: #0065FC;
 }
