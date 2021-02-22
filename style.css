@@ -74,6 +74,8 @@ header nav a {
 
 header nav a:hover {
     color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 50px;
 }
 
 header h1 {
@@ -138,11 +140,6 @@ header h2 {
     font-weight: bold;
 }
 
-#rechercher button:active {
-	border-radius: 0px 10px 10px 0px;
-    background-color: #0065FC;
-}
-
 #filtres {
     display: flex;
     margin-bottom: 30px;
@@ -155,6 +152,8 @@ header h2 {
 }
 
 #filtres button {
+    width: auto;
+    height: 50px;
     margin-right: 30px;
     border-radius: 50px;
     background-color: white;
@@ -162,6 +161,23 @@ header h2 {
     border-color: #F2F2F2;
     border-width: 0.2em;
     border-style:solid;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+#background_i {
+    background-color: #DEEBFF;
+    position: absolute;
+    border-radius: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.fa-money-bill-wave-alt {
+    color: #0065FC;
 }
 
 #information {
@@ -172,6 +188,7 @@ header h2 {
 }
 
 #background_button_i {
+    background-color: white;
     width: 25px;
     height: 25px;
     border-radius: 100px;
@@ -200,6 +217,10 @@ header h2 {
 	border-radius: 20px 20px 20px 20px;
 	background-color: #F2F2F2;
 	text-align: left;
+}
+
+#hebergements i {
+    text-decoration: none;
 }
 
 #hebergements h1 {
