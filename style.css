@@ -40,10 +40,13 @@ html {
 
 body {
 	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 
 header {
+    width: 100%;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -95,52 +98,47 @@ header h2 {
 }
 
 #search_bar {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-#B1 {
+    width: 100%;
     display: flex;
-}
-
-#background_map_marker {
-    background-color: #F2F2F2;
-    border-style: none;
-    width: 37px;
-    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 5%;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.fa-map-marker-alt {
     font-size: 1em;
 }
 
 #map_marker {
-    width: 15px;
-    height: 15px;
-    margin: 20px 15px 20px 15px;
+    background-color: #F2F2F2;
+    padding: 11px 15px 10px 15px;
+    border-radius: 15px 0px 0px 15px;
+    cursor: pointer;
 }
 
-#barre {
-	width: 190px;
-	height: 40px;
-    border-width: 0.2em;
-    border-left-color: white;
-    border-right-color: white;
-    border-color: #F2F2F2;
-    border-style: solid;
+#map_marker:hover {
+    box-shadow: 0px 0px 11px 5px #F2F2F2;
 }
 
-#rechercher {
-    width: 100px;
-	height: 40px;
-	border-radius: 0px 10px 10px 0px;
+#search_line {
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    border-right: none;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Raleway-SemiBold', serif;
+}
+
+#search_button {
     background-color: #0065FC;
     color: white;
-    border-style: none;
-    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    border: 2px #0065FC solid;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    font-family: 'Raleway-SemiBold', serif;
+}
+
+#search_button:hover {
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+    color: #0065FC;
 }
 
 #filtres {
@@ -181,29 +179,31 @@ header h2 {
 #filtres .filtre:hover {
     box-shadow: 0px 0px 11px 2px #D0D0D0;
     background-color: #DEEBFF;
+    border-color: #DEEBFF;
+    color: #0065FC;
+    cursor: pointer;
 }
 
 #information {
-    margin-top: 15px;
+    width: 100%;
+    margin-top: 7%;
     font-size: 0.8em;
-    display: flex;
-    align-items: center;
 }
 
-#background_button_i {
+#button_i {
+    width: 5px;
+    padding: 3px 8px 3px 8px;
     background-color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 100px;
-    border-color: #F2F2F2;
-    border-width: 0.2em;
-    border-style: solid;
-    margin-right: 10px;
+    border: 1px #DEEBFF solid;
+    border-radius: 100%;
+    color: #0065FC;
+    margin-right: 5px;
 }
 
-.fa-info {
-    color: #0065FC;
-    font-size: 0.7em;
+#button_i:hover {
+    box-shadow: 0px 0px 11px 2px #D0D0D0;
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 #box_1 {
@@ -379,16 +379,19 @@ header h2 {
 
 
 #flex_3 {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
 }
 
 #activite_1, #activite_2, #activite_3, #activite_4, #activite_5, #activite_6 {
-    width: 50%;
+    width: 20%;
     height: 100%;
     background-color: white;
     box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
     border-radius: 10px;
+    margin-right: 15px;
 }
 
 #activites h2 {
@@ -404,12 +407,14 @@ header h2 {
 
 .activite {
     width: 100%;
+    max-height: 100%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
     margin-bottom: -5px;
 }
 
 footer {
+    width: 100%;
     height: 20%;
     background-color: #F2F2F2;
     margin-top: 10px;
