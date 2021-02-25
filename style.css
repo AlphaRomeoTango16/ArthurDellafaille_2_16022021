@@ -390,6 +390,7 @@ header h2 {
 }
 
 #box_2 {
+    display: flex;
     width: 99%;
     height: 20%;
     margin-top: 5%;
@@ -422,12 +423,14 @@ header h2 {
 }
 
 .activite {
+    display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: white;
     box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
     border-radius: 10px;
     position: relative;
+    padding-bottom: 17%;
 }
 
 #activites h2 {
@@ -447,7 +450,6 @@ header h2 {
 .activite_pic {
     width: 100%;
     height: 100%;
-    margin-bottom: 10%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
