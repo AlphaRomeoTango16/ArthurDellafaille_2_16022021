@@ -391,9 +391,8 @@ header h2 {
 
 #box_2 {
     width: 99%;
-    height: 70vh;
+    height: 20%;
     margin-top: 5%;
-    align-items: center;
 }
 
 #activites {
@@ -424,7 +423,7 @@ header h2 {
 
 .activite {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: white;
     box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
     border-radius: 10px;
@@ -447,7 +446,7 @@ header h2 {
 
 .activite_pic {
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin-bottom: 10%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
@@ -455,7 +454,7 @@ header h2 {
 
 footer {
     width: 100%;
-    height: 25vh;
+    height: 20%;
     background-color: #F2F2F2;
     margin-top: 10px;
     padding-top: 20px;
