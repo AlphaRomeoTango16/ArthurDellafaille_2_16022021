@@ -40,21 +40,17 @@ html {
 
 body {
 	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
-    width: 100%;
-    height: 100%;
 }
 
 
 header {
-    width: 100%;
-    height: 20%;
     display: flex;
     justify-content: space-between;
 	align-items: flex-start;
-    margin-left: 20px;
+    margin-left: 2em;
 }
 
-img {
+header img {
     width: 100px;
 	height: 50px;
     margin-bottom: 10px;
@@ -114,7 +110,9 @@ header h2 {
 }
 
 #map_marker:hover {
-    box-shadow: 0px 0px 11px 5px #F2F2F2;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    cursor: pointer;
 }
 
 #search_line {
@@ -208,86 +206,94 @@ header h2 {
 
 #box_1 {
     width: 100%;
-    height: 30%;
+    height: 85vh;
+    margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: 2%;
 }
 
 #hebergements {
 	width: 65%;
-    height: 100%;
-	margin-top: 30px;
+    height: auto;
 	border-radius: 20px;
 	background-color: #F2F2F2;
-	text-align: left;
+    justify-content: center;
 }
 
 #hebergements h1 {
     font-family: 'Raleway-SemiBold', serif;
-    margin-left: 25px;
+    margin-left: 5%;
+    margin-top: 3.5%;;
 }
 
 #hebergements h2 {
-    font-size: 0.8em;
+    font-size: 90%;
     font-family: 'Raleway-SemiBold', serif;
-    margin-left: 10px;
-    margin-top: 13px;
-    line-height: 0px;
+    margin-left: 3%;
+    line-height: 10px;
 }
 
 #hebergements h3 {
-    font-size: 0.7em;
-    margin-left: 10px;
+    font-size: 80%;
+    margin-left: 3%;
     line-height: 10px;
+    margin-bottom: 5%;
 }
 
 
 #flex_1 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
+    margin-left: 3.5%;
 }
 
 
-.hotel_1 {
-    width: 25%;
+.hotel {
+    width: 29%;
+    height: auto;
     background-color: white;
     box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
     border-radius: 10px;
-    margin: 15px;
+    margin: 10px;
     padding: 3px;
     text-decoration: none;
     color: black;
 }
 
-.pic_hotel_1 {
+.hotel:hover {
+    box-shadow: 5px 5px 5px 2px #848484;
+}
+
+.hotel .pic_hotel {
     width: 100%;
-    max-height: 100%;
+    height: 20vh;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
 
-.rating {
-    margin-left: 10px;
-    line-height: 10px;
+.hotel .rating {
+    margin-left: 3%;
     display: flex;
     flex-direction: row;
 }
 
-.rating .blue_star {
+.hotel .rating .blue_star {
     color: #0065FC;
-    width: 1em;
+    font-size: 70%;
+    float: inline-end;
+    margin-bottom: 3%;
 }
 
-.rating .grey_star {
+.hotel .rating .grey_star {
     color: #F2F2F2;
-    width: 1em;
+    font-size: 70%;
 }
 
 #afficher_plus {
-    margin-top: 25px;
-    margin-left: 25px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3.5%;
 }
 
 #afficher_plus a {
@@ -302,9 +308,9 @@ header h2 {
 }
 
 #populaires {
-	width: 25%;
-    margin-top: 30px;
-	padding: 5px 20px 20px 20px;
+	width: 30%;
+    height: auto;
+    margin-left: 2%;
 	border-radius: 20px 20px 20px 20px;
 	background-color: rgb(240, 240, 240);
 	text-align: left;
@@ -312,92 +318,126 @@ header h2 {
 
 #populaires h1 {
     font-family: 'Raleway-SemiBold', serif;
-    margin-left: 20px;
-    margin-top: 23px;
+    margin-left: 10%;
+    margin-top: 8%;
 }
 
 .fa-chart-line {
     color: black;
     float: right;
-    margin-right: 20px;
+    margin-right: 10%;
 }
 
 #populaires h2 {
-    font-size: 0.8em;
+    font-size: 90%;
     font-family: 'Raleway-SemiBold', serif;
     margin-top: 13px;
     line-height: 15px;
 }
 
 #populaires h3 {
-    font-size: 0.7em;
+    font-size: 80%;
     line-height: 5px;
 }
 
 #flex_2 {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
 }
 
-#populaire_1, #populaire_2, #populaire_3 {
-    width: 90%;
+.populaire {
+    width: 85%;
     height: auto;
     background-color: white;
-    border-radius: 10px;
-    padding: 3px;
-    margin-left: 15px;
-    margin-right: 20px;
+    margin: 3.5%;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
 }
 
-#populaire_2, #populaire_3 {
-    margin-top: 35px;
+.populaire:hover {
+    box-shadow: 5px 5px 5px 2px #848484;
 }
 
-.pic_hotel_2 {
-    width: 30%;
-    max-height: auto;
-    border-radius: 10px 0px 0px 10px;
-    margin-right: 10px;
+.pic_populaire {
+    width: 40%;
+    height: 20vh;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: 5%;
     object-fit: cover;
-    margin-bottom: -5px;
     float: left;
 }
 
+
+.populaire .rating {
+    margin-left: 3%;
+    line-height: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.populaire .rating .blue_star {
+    color: #0065FC;
+    font-size: 70%;
+    float: inline-end;
+}
+
+.populaire .rating .grey_star {
+    color: #F2F2F2;
+    font-size: 70%;
+}
+
 #box_2 {
-    width: 100%;
-    height: 30%;
-    margin-left: 20px;
+    width: 99%;
+    height: 70vh;
+    margin-top: 5%;
+    align-items: center;
 }
 
 #activites {
-	text-align: left;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
 #activites h1 {
     font-family: 'Raleway-SemiBold', serif;
 }
 
-
 #flex_3 {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
 }
 
-#activite_1, #activite_2, #activite_3, #activite_4, #activite_5, #activite_6 {
-    width: 20%;
-    height: 100%;
+.mini_box_1 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+}
+
+.mini_box_2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+}
+
+.activite {
+    width: 100%;
+    height: auto;
     background-color: white;
     box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
     border-radius: 10px;
-    margin-right: 15px;
+    position: relative;
 }
 
 #activites h2 {
     font-family: 'Raleway-SemiBold', serif;
-    font-size: 80%;
+    font-size: 90%;
     margin-left: 10px;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: 0;
 }
 
 #activites a {
@@ -405,17 +445,17 @@ header h2 {
     color: black;
 }
 
-.activite {
+.activite_pic {
     width: 100%;
-    max-height: 100%;
+    height: 90%;
+    margin-bottom: 10%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
-    margin-bottom: -5px;
 }
 
 footer {
     width: 100%;
-    height: 20%;
+    height: 25vh;
     background-color: #F2F2F2;
     margin-top: 10px;
     padding-top: 20px;
@@ -433,13 +473,13 @@ footer nav ul {
 
 footer nav h1 {
     font-family: 'Raleway-SemiBold', serif;
-    font-size: 1em;
+    font-size: 100%;
 }
 
 footer nav a {
     text-decoration: none;
     color: black;
-    font-size: 0.9em;
+    font-size: 90%;
     line-height: 35px;
 }
 
