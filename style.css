@@ -62,10 +62,6 @@ header img {
     margin-bottom: 10px;
 }
 
-header nav {
-    text-align: left;
-}
-
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -540,15 +536,24 @@ footer nav a:hover {
     header {
         display: block;
         margin-left: 1em;
+        margin-right: 1em;
     }
     
     header img {
         width: 130px;
         margin: 0;
+        order: 2;
     }
 
     header #filtres {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     header nav ul {
@@ -560,9 +565,40 @@ footer nav a:hover {
         padding-right: 10px;
     }
 
-    #search_button a {
-        display: none;
+    #search_bar {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    #map_marker {
+        font-size: 1em;
+        padding: 15px 20px 16px 20px;
+    }
+
+    #search_line {
+        width: 250px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    #search_button {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    #search_button a {
+        font-size: 0;
+    }
+
+    #search_button a::before {
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f002";
+        font-size: initial;
+    }
+
+   #filtres .filtre {
+       width: auto;
+       margin: 0;
+   }
 
     #box_1 {
         flex-direction: column-reverse;
