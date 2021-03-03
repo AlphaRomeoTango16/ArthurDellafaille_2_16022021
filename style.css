@@ -513,11 +513,171 @@ footer nav a:hover {
         flex-direction: column;
     }
 
+    header nav li {
+        padding-bottom: 10px;
+    }
+
+    header nav a:hover {
+        border-top: none;
+    }
+
     footer nav h2 {
         font-size: 0.7em;
     }
 
     footer nav a {
         font-size: 0.6em;
+    }
+}
+
+@media all and (max-width: 500px)
+{
+    
+    body {
+        margin: 0;
+    }
+
+    header {
+        display: block;
+        margin-left: 1em;
+    }
+    
+    header img {
+        width: 130px;
+        margin: 0;
+    }
+
+    header #filtres {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        padding-left: 0;
+    }
+
+    header nav li {
+        padding-right: 10px;
+    }
+
+    #search_button a {
+        display: none;
+    }
+
+    #box_1 {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #flex_1 {
+        flex-direction: column;
+        margin: 0;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    #hebergements {
+        width: 100%;
+        margin-top: 10px;
+        background-color: white;
+    }
+
+    #hebergements h1 {
+        font-size: 1.3em;
+        margin-left: 7%;
+    }
+
+    #hebergements h3 {
+        margin-bottom: 3%;
+    }
+
+    .hotel {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    #afficher_plus {
+        margin-left: 5%;
+    }
+
+    #flex_2 {
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    .populaire {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #populaires {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    #populaires h1 {
+        font-size: 1.3em;
+        margin-left: 7%;
+
+    }
+
+    #flex_3{
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #activites h1 {
+        margin-left: 5%;
+    }
+
+    .mini_box_1 {
+        margin: 0;
+    }
+
+    .mini_box_2 {
+        margin: 0;
+    }
+
+    .mini_box_1 .activite {
+        width: 100%;
+        height: 130px;
+    }
+
+    .mini_box_2 .activite {
+        height: 130px;
+    }
+
+    .activite {
+        margin-bottom: 5%;
+    }
+
+    .activite h2 {
+        margin-bottom: 3%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    footer nav {
+        margin: 0;
+    }
+
+    footer nav h2 {
+        font-size: 1em;
+    }
+
+    footer nav ul {
+        padding: 0;
+        margin-left: 5%;
+    }
+
+    footer nav a {
+        font-size: 0.9em;
     }
 }
