@@ -1,32 +1,4 @@
 
-@media all and (max-width: 1024px) {
-    #page {
-        width: auto;
-    }
-
-    header nav {
-        width: auto;
-        text-align: left;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav li {
-        margin-bottom: 10%;
-    }
-
-    header nav a {
-        color: red;
-    }
-
-    header nav a:hover {
-        color: red;
-    }
-
-}
-
 
 @font-face {
     font-family: 'Raleway-Thin';
@@ -70,13 +42,9 @@ html {
 
 body {
 	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
-    width: 100%;
-    height: 100%;
-    margin: 0;
 }
 
 #page {
-    width: 99%;
     height: 100%;
 }
 
@@ -200,6 +168,7 @@ header h2 {
 }
 
 #filtres .filtre .icone {
+    width: 20px;
     padding: 12px;
     background-color: #DEEBFF;
     border-radius: 50px;
@@ -521,18 +490,34 @@ footer nav ul {
     list-style-type: none;
 }
 
-footer nav h1 {
+footer nav h2 {
     font-family: 'Raleway-SemiBold', serif;
-    font-size: 100%;
+    font-size: 1em;
 }
 
 footer nav a {
     text-decoration: none;
     color: black;
-    font-size: 90%;
+    font-size: 0.9em;
     line-height: 35px;
 }
 
+
 footer nav a:hover {
     color: #0065FC;
+}
+
+@media all and (max-width: 1024px)
+{
+    header nav ul {
+        flex-direction: column;
+    }
+
+    footer nav h2 {
+        font-size: 0.7em;
+    }
+
+    footer nav a {
+        font-size: 0.6em;
+    }
 }
