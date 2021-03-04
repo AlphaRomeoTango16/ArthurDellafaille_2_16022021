@@ -556,9 +556,8 @@ footer nav a:hover {
         width: unset;
         display: flex;
         flex-direction: column;
-        margin-left: 1em;
-        margin-right: 1em;
         margin-bottom: 1em;
+        margin-left: 0;
     }
 
     #menu {
@@ -570,6 +569,7 @@ footer nav a:hover {
     header img {
         width: 100px;
         margin: 0;
+        margin-left: 20px;
     }
 
     header #filtres {
@@ -580,20 +580,32 @@ footer nav a:hover {
     header nav {
         width: 100%;
         display: flex;
+        justify-content: right;
     }
 
    #nav_1 {
+       width: 50%;
        border-bottom: 3px #F2F2F2 solid;
        padding: 10px 10px 10px 10px;
    }
 
    #nav_2 {
+       width: 50%;
         border-bottom: 3px #F2F2F2 solid;
         padding: 10px 10px 10px 10px;
     }
 
+    #nav_1 a:hover {
+        border-top: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
     #nav_3 {
         padding: 10px 10px 10px 10px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        border: none;
 
     }
 
@@ -607,8 +619,12 @@ footer nav a:hover {
     header nav li {
         width: auto;
         padding: unset;
-        display: flex;
-        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #titre_principal {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     header h2 {
@@ -619,8 +635,8 @@ footer nav a:hover {
         width: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 35px;
-        margin-bottom: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #map_marker {
@@ -664,8 +680,8 @@ footer nav a:hover {
    }
 
    #information {
-       margin-top: unset;
-       margin-bottom: 15px;
+       margin-top: 20px;
+       margin-bottom: 10px;
        display: flex;
        align-items: flex-start;
    }
