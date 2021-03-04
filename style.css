@@ -50,10 +50,18 @@ body {
 
 
 header {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 	align-items: flex-start;
     margin-left: 2em;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 header img {
@@ -79,7 +87,7 @@ header nav a {
 header nav a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 30px;
+    padding-top: 37px;
 }
 
 header h1 {
@@ -152,6 +160,11 @@ header h2 {
     margin-right: 30px;
 }
 
+#box_filtre {
+    display: flex;
+    flex-direction: row;
+}
+
 #filtres .filtre {
     height: 40px;
     border: 2px solid #F2F2F2;
@@ -187,6 +200,8 @@ header h2 {
 
 #information {
     width: 100%;
+    display: flex;
+    align-items: center;
     margin-top: 7%;
     font-size: 0.8em;
 }
@@ -205,6 +220,10 @@ header h2 {
     box-shadow: 0px 0px 11px 2px #D0D0D0;
     background-color: #DEEBFF;
     cursor: pointer;
+}
+
+#button_titre {
+    margin-left: 1%;
 }
 
 #box_1 {
@@ -534,15 +553,23 @@ footer nav a:hover {
     }
 
     header {
-        display: block;
+        width: unset;
+        display: flex;
+        flex-direction: column;
         margin-left: 1em;
         margin-right: 1em;
+        margin-bottom: 1em;
+    }
+
+    #menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
     }
     
     header img {
-        width: 130px;
+        width: 100px;
         margin: 0;
-        order: 2;
     }
 
     header #filtres {
@@ -551,24 +578,49 @@ footer nav a:hover {
     }
 
     header nav {
-        order: 1;
+        width: 100%;
+        display: flex;
+    }
+
+   #nav_1 {
+       border-bottom: 3px #F2F2F2 solid;
+       padding: 10px 10px 10px 10px;
+   }
+
+   #nav_2 {
+        border-bottom: 3px #F2F2F2 solid;
+        padding: 10px 10px 10px 10px;
+    }
+
+    #nav_3 {
+        padding: 10px 10px 10px 10px;
+
+    }
+
+    header nav ul {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    header nav li {
+        width: auto;
+        padding: unset;
         display: flex;
         flex-wrap: wrap;
     }
 
-    header nav ul {
-        flex-direction: row;
-        padding-left: 0;
-    }
-
-    header nav li {
-        padding-right: 10px;
+    header h2 {
+        margin-top: 15px;
     }
 
     #search_bar {
         width: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
     }
 
     #map_marker {
@@ -577,7 +629,7 @@ footer nav a:hover {
     }
 
     #search_line {
-        width: 250px;
+        width: 100%;
         padding: 15px 20px 15px 20px;
     }
 
@@ -595,9 +647,32 @@ footer nav a:hover {
         font-size: initial;
     }
 
+    #filtres {
+        margin-bottom: 10px;
+    }
+
    #filtres .filtre {
        width: auto;
-       margin: 0;
+       margin-right: 10px;
+       margin-top: 5px;
+       margin-bottom: 5px;
+   }
+
+   #box_filtre {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   #information {
+       margin-top: unset;
+       margin-bottom: 15px;
+       display: flex;
+       align-items: flex-start;
+   }
+
+   #button_titre {
+       font-size: 1.2em;
+       line-height: 1.5em;
    }
 
     #box_1 {
