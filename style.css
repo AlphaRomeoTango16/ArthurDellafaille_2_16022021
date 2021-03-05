@@ -42,6 +42,7 @@ html {
 
 body {
 	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
+    margin: unset;
 }
 
 #page {
@@ -231,7 +232,7 @@ header h2 {
     margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2%;
+    justify-content: center;
 }
 
 #hebergements {
@@ -268,6 +269,8 @@ header h2 {
     flex-wrap: wrap;
     margin-left: 3.5%; 
     margin-right: 3.5%;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -494,12 +497,13 @@ footer {
     margin-top: 10px;
     padding-top: 2%;
     padding-bottom: 3%;
-    display: flex;
     padding-left: 15px;
 }
 
-footer nav {
-    margin-right: 150px;
+#menu_footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer nav ul {
@@ -531,6 +535,48 @@ footer nav a:hover {
 
     header nav li {
         padding-bottom: 10px;
+    }
+
+    #box_1 {
+        flex-direction: column;
+        margin-left: 1.5em;
+    }
+
+    #hebergements {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    #hebergements .hotel {
+        width: 27%;
+        height: 200px;
+    }
+    
+    #populaires {
+        width: 100%;
+        margin-left: unset;
+    }
+
+    #populaires h1 {
+        margin-top: 5%;
+    }
+
+    #populaires .populaire {
+        width: 90%;
+        margin: unset;
+        margin-bottom: 5%;
+    }
+
+    #flex_2 {
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    #box_2 {
+        margin: 1.5em;
     }
 
     footer nav h2 {
@@ -580,6 +626,10 @@ footer nav a:hover {
         justify-content: right;
     }
 
+    header nav a:hover {
+        border-top: unset;
+    }
+
    #nav_1 {
        width: 50%;
        border-bottom: 3px #F2F2F2 solid;
@@ -591,9 +641,14 @@ footer nav a:hover {
         border-bottom: 3px #F2F2F2 solid;
         padding: 10px 10px 10px 10px;
     }
+    
+    #nav_1:hover {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
 
-    #nav_1 a:hover {
-        border-top: 3px solid #0065FC;
+    #nav_2:hover {
+        border-bottom: 3px solid #0065FC;
         padding-bottom: 10px;
     }
 
@@ -604,6 +659,10 @@ footer nav a:hover {
         top: 25px;
         border: none;
 
+    }
+
+    #nav_3:hover {
+        font-family: 'Raleway-SemiBold';
     }
 
     header nav ul {
