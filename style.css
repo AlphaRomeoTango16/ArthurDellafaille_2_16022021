@@ -42,6 +42,7 @@ html {
 
 body {
 	font-family: 'Raleway-Regular', 'Raleway-SemiBold', Arial, sans-serif;
+    margin: unset;
 }
 
 #page {
@@ -231,7 +232,7 @@ header h2 {
     margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2%;
+    justify-content: center;
 }
 
 #hebergements {
@@ -538,6 +539,7 @@ footer nav a:hover {
 
     #box_1 {
         flex-direction: column;
+        margin-left: 1.5em;
     }
 
     #hebergements {
@@ -571,6 +573,10 @@ footer nav a:hover {
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
+    }
+
+    #box_2 {
+        margin: 1.5em;
     }
 
     footer nav h2 {
