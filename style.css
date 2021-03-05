@@ -544,11 +544,6 @@ footer nav a:hover {
         width: 100%;
         margin-bottom: 3%;
     }
-    
-    #hebergements #flex_1 {
-        justify-content: center;
-        align-content: center;
-    }
 
     #hebergements .hotel {
         width: 27%;
@@ -565,8 +560,17 @@ footer nav a:hover {
     }
 
     #populaires .populaire {
+        width: 90%;
         margin: unset;
         margin-bottom: 5%;
+    }
+
+    #flex_2 {
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     footer nav h2 {
