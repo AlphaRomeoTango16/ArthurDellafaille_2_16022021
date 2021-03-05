@@ -580,6 +580,10 @@ footer nav a:hover {
         justify-content: right;
     }
 
+    header nav a:hover {
+        border-top: unset;
+    }
+
    #nav_1 {
        width: 50%;
        border-bottom: 3px #F2F2F2 solid;
@@ -591,9 +595,14 @@ footer nav a:hover {
         border-bottom: 3px #F2F2F2 solid;
         padding: 10px 10px 10px 10px;
     }
+    
+    #nav_1:hover {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
 
-    #nav_1 a:hover {
-        border-top: 3px solid #0065FC;
+    #nav_2:hover {
+        border-bottom: 3px solid #0065FC;
         padding-bottom: 10px;
     }
 
@@ -604,6 +613,10 @@ footer nav a:hover {
         top: 25px;
         border: none;
 
+    }
+
+    #nav_3:hover {
+        font-family: 'Raleway-SemiBold';
     }
 
     header nav ul {
