@@ -755,8 +755,6 @@ footer nav a:hover {
     #flex_1 {
         flex-direction: column;
         margin: 0;
-        padding-left: 7%;
-        padding-right: 7%;
     }
 
     #hebergements {
@@ -774,8 +772,8 @@ footer nav a:hover {
         margin-bottom: 3%;
     }
 
-    .hotel {
-        width: 100%;
+    #hebergements .hotel {
+        width: 90%;
         margin: 0;
         margin-bottom: 5%;
     }
@@ -807,10 +805,17 @@ footer nav a:hover {
 
     }
 
+    #box_2 {
+        margin: unset;
+    }
+
+    #activites {
+        margin: unset;
+    }
+
     #flex_3{
+        width: 100%;
         flex-direction: column;
-        padding-left: 5%;
-        padding-right: 5%;
     }
 
     #activites h1 {
@@ -818,23 +823,31 @@ footer nav a:hover {
     }
 
     .mini_box_1 {
+        width: 100%;
         margin: 0;
     }
 
     .mini_box_2 {
+        width: 100%;
         margin: 0;
     }
 
     .mini_box_1 .activite {
-        width: 100%;
+        width: 90%;
         height: 130px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .mini_box_2 .activite {
+        width: 90%;
         height: 130px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .activite {
+        width: 90%;
         margin-bottom: 5%;
     }
 
@@ -843,8 +856,14 @@ footer nav a:hover {
     }
 
     footer {
-        flex-direction: column;
         padding: 0;
+    }
+
+    #menu_footer {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 2%;
+        padding-bottom: 5%;
     }
 
     footer nav {
