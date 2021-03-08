@@ -51,12 +51,13 @@ body {
 
 
 header {
-    width: 100%;
+    width: 97%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 	align-items: flex-start;
-    margin-left: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #menu {
@@ -492,12 +493,11 @@ header h2 {
 }
 
 footer {
-    width: 101%;
+    width: 100%;
     background-color: #F2F2F2;
     margin-top: 10px;
     padding-top: 2%;
     padding-bottom: 3%;
-    padding-left: 15px;
 }
 
 #menu_footer {
@@ -529,17 +529,25 @@ footer nav a:hover {
 
 @media all and (max-width: 1024px)
 {
+
+    header {
+        width: 95%;
+    }
+
     header nav ul {
         flex-direction: row;
     }
 
     header nav li {
         padding-bottom: 10px;
+        padding-right: 30px;
     }
 
     #box_1 {
+        width: 95%;
         flex-direction: column;
-        margin-left: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #hebergements {
@@ -576,7 +584,13 @@ footer nav a:hover {
     }
 
     #box_2 {
-        margin: 1.5em;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        width: 100%;
     }
 
     footer nav h2 {
@@ -590,17 +604,12 @@ footer nav a:hover {
 
 @media all and (max-width: 500px)
 {
-    
-    body {
-        margin: 0;
-    }
 
     header {
         width: unset;
         display: flex;
         flex-direction: column;
         margin-bottom: 1em;
-        margin-left: 0;
     }
 
     #menu {
@@ -679,8 +688,9 @@ footer nav a:hover {
     }
 
     #titre_principal {
-        margin-left: 1em;
-        margin-right: 1em;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header h2 {
@@ -748,8 +758,9 @@ footer nav a:hover {
    }
 
     #box_1 {
+        width: 100%;
         flex-direction: column-reverse;
-        margin: 0;
+        margin: unset;
     }
 
     #flex_1 {
@@ -805,11 +816,12 @@ footer nav a:hover {
 
     }
 
-    #box_2 {
+    #activites {
         margin: unset;
     }
 
-    #activites {
+    #box_2 {
+        width: 100%;
         margin: unset;
     }
 
@@ -855,19 +867,12 @@ footer nav a:hover {
         margin-bottom: 3%;
     }
 
-    footer {
-        padding: 0;
-    }
-
     #menu_footer {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
-        margin-left: 2%;
         padding-bottom: 5%;
-    }
-
-    footer nav {
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     footer nav h2 {
@@ -876,7 +881,6 @@ footer nav a:hover {
 
     footer nav ul {
         padding: 0;
-        margin-left: 5%;
     }
 
     footer nav a {
