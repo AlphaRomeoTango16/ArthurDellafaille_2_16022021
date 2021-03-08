@@ -180,11 +180,16 @@ header h2 {
 
 #filtres .filtre .icone {
     width: 20px;
+    height: 20px;
+    display: flex;
     padding: 12px;
     background-color: #DEEBFF;
     border-radius: 50px;
     color: #0065FC;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #filtres .filtre .titre {
     padding: 12px;
