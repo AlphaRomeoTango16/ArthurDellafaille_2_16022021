@@ -464,6 +464,7 @@ header h2 {
     margin-bottom: 10px;
     overflow: hidden;
 }
+
 .mini_box_1 .activite {
     height: 450px;
 }
@@ -481,7 +482,9 @@ header h2 {
     font-size: 0.7em;
     margin-left: 10px;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 #activites a {
