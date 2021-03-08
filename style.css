@@ -244,20 +244,20 @@ header h2 {
     justify-content: center;
 }
 
-#hebergements h1 {
+#hebergements h2 {
     font-family: 'Raleway-SemiBold', serif;
     margin-left: 5%;
     margin-top: 3.5%;;
 }
 
-#hebergements h2 {
+#hebergements h3 {
     font-size: 90%;
     font-family: 'Raleway-SemiBold', serif;
     margin-left: 3%;
     line-height: 10px;
 }
 
-#hebergements h3 {
+#hebergements p {
     font-size: 80%;
     margin-left: 3%;
     line-height: 10px;
@@ -341,7 +341,7 @@ header h2 {
 	text-align: left;
 }
 
-#populaires h1 {
+#populaires h2 {
     font-family: 'Raleway-SemiBold', serif;
     margin-left: 10%;
     margin-top: 8%;
@@ -353,14 +353,14 @@ header h2 {
     margin-right: 10%;
 }
 
-#populaires h2 {
+#populaires h3 {
     font-size: 90%;
     font-family: 'Raleway-SemiBold', serif;
     margin-top: 13px;
     line-height: 15px;
 }
 
-#populaires h3 {
+#populaires p {
     font-size: 80%;
     line-height: 15px;
 }
@@ -427,7 +427,7 @@ header h2 {
     margin-left: 2%;
 }
 
-#activites h1 {
+#activites h2 {
     font-family: 'Raleway-SemiBold', serif;
 }
 
@@ -471,11 +471,10 @@ header h2 {
     box-shadow: 5px 5px 5px 2px #848484;
 }
 
-#activites h2 {
+#activites h3 {
     font-family: 'Raleway-SemiBold', serif;
     font-size: 0.7em;
     margin-left: 10px;
-    margin-bottom: 5%;
     position: absolute;
     bottom: 0;
 }
@@ -527,7 +526,7 @@ footer nav a:hover {
     color: #0065FC;
 }
 
-@media all and (max-width: 1024px)
+@media all and (min-width: 760px) and (max-width: 1024px)
 {
 
     header {
@@ -602,7 +601,7 @@ footer nav a:hover {
     }
 }
 
-@media all and (max-width: 500px)
+@media all and (min-width: 300px) and (max-width: 500px)
 {
 
     header {
@@ -662,6 +661,7 @@ footer nav a:hover {
     }
 
     #nav_3 {
+        width: 20%;
         padding: 10px 10px 10px 10px;
         position: absolute;
         right: 20px;
@@ -682,7 +682,7 @@ footer nav a:hover {
     }
 
     header nav li {
-        width: auto;
+        width: 100%;
         padding: unset;
         text-align: center;
     }
