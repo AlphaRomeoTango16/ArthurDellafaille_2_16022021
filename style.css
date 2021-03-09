@@ -84,12 +84,12 @@ header nav li {
 header nav a {
     text-decoration: none;
     color:grey;
+    padding: 27px 15px;
 }
 
 header nav a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 37px;
 }
 
 header h1 {
