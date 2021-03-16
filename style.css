@@ -882,11 +882,19 @@ footer nav a:hover {
     .mini_box_1 {
         width: 100%;
         margin: 0;
+        margin-bottom: 10px;
     }
 
     .mini_box_2 {
         width: 100%;
         margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .mini_box_3 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
     .mini_box_1 .activite {
@@ -896,16 +904,39 @@ footer nav a:hover {
         margin-right: auto;
     }
 
-    .mini_box_2 .activite {
+    #activite_1 {
         width: 90%;
         height: 130px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    #activite_2 {
+        width: 90%;
+        height: 130px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #activite_3 {
+        width: 90%;
+        height: 130px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #activite_4 {
+        width: 90%;
+        height: 130px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .activite {
         width: 90%;
-        margin-bottom: 5%;
     }
 
     .activite h2 {
