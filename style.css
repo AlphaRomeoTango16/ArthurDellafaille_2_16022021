@@ -444,6 +444,7 @@ header h2 {
 
 #activites {
     margin-left: 2%;
+    margin-right: 2%;
 }
 
 #activites h2 {
@@ -469,22 +470,43 @@ header h2 {
 
 .activite {
     display: flex;
+    height: 450px;
     width: 100%;
     background-color: white;
     box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
     border-radius: 10px;
     position: relative;
     padding-bottom: 40px;
-    margin-bottom: 10px;
     overflow: hidden;
 }
 
-.mini_box_1 .activite {
-    height: 450px;
+#activite_1, #activite_2, #activite_3, #activite_4 {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 10px rgba(105, 103, 103, 0.3);
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 40px;
+    overflow: hidden;
 }
 
-.mini_box_2 .activite {
-    height: 200px;
+#activite_1 {
+    height: 230px;
+}
+
+#activite_2 {
+    height: 150px;
+    margin-top: 30px;
+}
+
+#activite_3 {
+    height: 190px;
+}
+
+#activite_4 {
+    height: 190px;
+    margin-top: 30px;
 }
 
 .activite:hover {
