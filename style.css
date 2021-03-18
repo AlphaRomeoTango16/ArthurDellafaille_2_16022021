@@ -513,6 +513,22 @@ header h2 {
     box-shadow: 5px 5px 5px 2px #848484;
 }
 
+#activite_1:hover {
+    box-shadow: 5px 5px 5px 2px #848484;
+}
+
+#activite_2:hover {
+    box-shadow: 5px 5px 5px 2px #848484;
+}
+
+#activite_3:hover {
+    box-shadow: 5px 5px 5px 2px #848484;
+}
+
+#activite_4:hover {
+    box-shadow: 5px 5px 5px 2px #848484;
+}
+
 #activites h3 {
     font-family: 'Raleway-SemiBold', serif;
     font-size: 0.7em;
